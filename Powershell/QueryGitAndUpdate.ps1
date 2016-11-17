@@ -8,7 +8,6 @@ param
 [string]$dbUsername,
 [string]$dbPassword,
 [string]$repoSourcePath="C:\Users\ingledej\Documents\DevClanAzureChallenge",
-[string]$subscriptionName="Visual Studio Ultimate with MSDN",
 [string]$projectName="Jfi.TestAzureProject",
 [string]$publishSettings,
 [string]$storageAccount,
@@ -140,12 +139,6 @@ Write-Host "Successfully pulled latest code"
 Add-AzureAccount
 
 try{
-    #Import-AzurePublishSettingsFile $publishSettings
-
-    #Set-AzureSubscription -SubscriptionName $subscriptionName -CurrentStorageAccount $storageAccount
-
-    #Select-AzureSubscription -SubscriptionName $subscriptionName -Default
-
     $gitHash = Get-GitCommitHash
     Write-Host "Latest git hash: $gitHash"
     $sqlHash = Get-LastBuildHash
