@@ -3,10 +3,10 @@
 param
 (
 ##[Parameter(Mandatory=$true)]
-[string]$databaseServer="jfi-tut.database.windows.net",
+[string]$databaseServer,
 [string]$database="HashHistoryDb",
-[string]$dbUsername="admindbo",
-[string]$dbPassword="Password2016",
+[string]$dbUsername,
+[string]$dbPassword,
 [string]$repoSourcePath="C:\Users\ingledej\Documents\DevClanAzureChallenge",
 [string]$subscriptionName="Visual Studio Ultimate with MSDN",
 [string]$projectName="Jfi.TestAzureProject",
