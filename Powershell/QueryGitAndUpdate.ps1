@@ -123,6 +123,16 @@ function Check-Deployment($service, $slot) {
     $completeDeployment.DeploymentId
 }
 
+function Get-DbCreds {
+    if (!$databaseServer){    $databaseServer = Read-Host "Database Server"}
+    if (!$database){    $database = Read-Host "Database"}
+    if (!$dbUsername){            $dbUsername = Read-Host "User name"}
+    if (!$dbPassword){            $dbPassword = Read-Host "Password"}
+}
+
+Write-Host "Getting database credential data"
+Set-DbCreds
+
 Write-Host "Pulling latest from Git"
 Get-GitLatest
 Write-Host "Successfully pulled latest code"
