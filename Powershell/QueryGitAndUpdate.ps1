@@ -4,7 +4,7 @@ param
 (
 ##[Parameter(Mandatory=$true)]
 [string]$databaseServer,
-[string]$database="HashHistoryDb",
+[string]$database,
 [string]$dbUsername,
 [string]$dbPassword,
 [string]$repoSourcePath="C:\Users\ingledej\Documents\DevClanAzureChallenge",
