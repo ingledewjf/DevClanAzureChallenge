@@ -122,7 +122,7 @@ function Check-Deployment($service, $slot) {
     $completeDeployment.DeploymentId
 }
 
-function Get-DbCreds {
+function Set-DbCreds {
     if (!$databaseServer){    $databaseServer = Read-Host "Database Server"}
     if (!$database){    $database = Read-Host "Database"}
     if (!$dbUsername){            $dbUsername = Read-Host "User name"}
