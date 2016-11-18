@@ -10,6 +10,8 @@ namespace Jfi.TestAzureProject.WebRole.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.DisplayMessage = "TEST MESSAGE";
+
             return View();
         }
 
