@@ -12,6 +12,8 @@ namespace Jfi.TestAzureProject.WebRole.Controllers
         {
             ViewBag.DisplayMessage = "TEST MESSAGE UPDATED ON GIT";
 
+            ViewBag.GeneratedNumber = AddNumbers(5, 5).ToString();
+
             return View();
         }
 
@@ -27,6 +29,11 @@ namespace Jfi.TestAzureProject.WebRole.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public int AddNumbers(int first, int second)
+        {
+            return first + second;
         }
     }
 }

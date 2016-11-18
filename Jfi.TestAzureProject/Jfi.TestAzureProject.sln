@@ -7,6 +7,8 @@ Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Jfi.TestAzureProject", "Jfi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jfi.TestAzureProject.WebRole", "Jfi.TestAzureProject.WebRole\Jfi.TestAzureProject.WebRole.csproj", "{EEEF9E94-6024-47B3-A566-1F07D87E3A7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jfi.TestAzureProject.WebRole.Tests", "Jfi.TestAzureProject.WebRole.Tests\Jfi.TestAzureProject.WebRole.Tests.csproj", "{4E61FDC5-FF75-4FFE-80F2-34F791069247}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EEEF9E94-6024-47B3-A566-1F07D87E3A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEEF9E94-6024-47B3-A566-1F07D87E3A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEEF9E94-6024-47B3-A566-1F07D87E3A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E61FDC5-FF75-4FFE-80F2-34F791069247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E61FDC5-FF75-4FFE-80F2-34F791069247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E61FDC5-FF75-4FFE-80F2-34F791069247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E61FDC5-FF75-4FFE-80F2-34F791069247}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
