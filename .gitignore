@@ -285,3 +285,7 @@ __pycache__/
 
 ### VisualStudio Patch ###
 build/
+*.publishsettings
+*.cscfg
+*.log,v
+Outputapp.publish/
